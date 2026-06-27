@@ -304,6 +304,11 @@ class Account extends BaseModel
 
     public function isPaid(): bool
     {
+        // Self-hosted: always treat as paid to remove Invoice Ninja branding from PDFs
+        if (Ninja::isSelfHost()) {
+            return true;
+        }
+
         return Ninja::isNinja() ? $this->isPaidHostedClient() : $this->hasFeature(self::FEATURE_WHITE_LABEL);
     }
 
