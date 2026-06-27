@@ -1,0 +1,8 @@
+import{c2 as $,u as C,au as w,cp as N,a as j,aP as I,aL as P,cq as k,p as T,j as n,bk as x,cr as A,bs as g,cs as E,a1 as L,h as p}from"./bundle.bpdBBdtF.js";const v=L.div`
+  background-color: ${r=>r.theme.backgroundColor};
+  border-color: ${r=>r.theme.borderColor};
+
+  &:hover {
+    background-color: ${r=>r.theme.hoverColor};
+  }
+`;function z({entity:r}){const{id:s}=$();if(!s)return null;const[u]=C(),c=w(),d=N(),t=j(),{isEditPage:m}=I({entity:r}),h=P(k),o=T.useMemo(()=>h?.resources,[h]),a=()=>{const e=o?.findIndex(l=>l.id===s)??-1;return e<=0?null:e-1},i=()=>{const e=o?.findIndex(l=>l.id===s)??-1;return e===-1||e===(o?.length??0)-1?null:e+1},f=()=>{const e=a();e!==null&&o&&c(p(`/${r}s/:id/${m?"edit":""}`,{id:o[e].id}))},b=()=>{const e=i();e!==null&&o&&c(p(`/${r}s/:id/${m?"edit":""}`,{id:o[e].id}))};return!o?.length||o.length===1||!o.find(e=>e.id===s)?null:n.jsxs("div",{className:"relative flex flex-1 space-x-2 items-center justify-end",children:[n.jsx(x,{message:u("previous"),width:"auto",placement:"bottom",withoutArrow:!0,withoutWrapping:!0,children:n.jsx(v,{className:g("p-2 sm:p-[0.725rem] border rounded-md shadow-sm",{"cursor-not-allowed opacity-50":a()===null,"cursor-pointer":a()!==null}),onClick:()=>{d({fn:()=>f()})},theme:{hoverColor:t.$4,backgroundColor:t.$1,borderColor:t.$24},children:n.jsx(A,{size:"0.9rem",color:t.$3})})}),n.jsx(x,{message:u("next"),width:"auto",placement:"bottom",withoutArrow:!0,withoutWrapping:!0,children:n.jsx(v,{className:g("p-2 sm:p-[0.725rem] border rounded-md shadow-sm",{"cursor-not-allowed opacity-50":i()===null,"cursor-pointer":i()!==null}),onClick:()=>{d({fn:()=>b()})},theme:{hoverColor:t.$4,backgroundColor:t.$1,borderColor:t.$24},children:n.jsx(E,{size:"0.9rem",color:t.$3})})})]})}export{z as P};

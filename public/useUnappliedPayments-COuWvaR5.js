@@ -1,0 +1,1 @@
+import{b as i,r as p,e as s}from"./bundle.bpdBBdtF.js";function r({clientId:a}){const{data:e=[],isLoading:t}=i({queryKey:["/api/v1/payments",a,"partially_unapplied"],queryFn:()=>p("GET",s("/api/v1/payments?client_id=:client_id&client_status=partially_unapplied",{client_id:a})).then(n=>n.data.data),enabled:!!a,staleTime:1/0});return{payments:e,isLoading:t}}export{r as u};

@@ -1,0 +1,1 @@
+import{e5 as s,j as r,z as o}from"./bundle.bpdBBdtF.js";function u(a){const n=s();return r.jsx(o,{value:a.value,onValueChange:a.onChange,withBlank:!0,errorMessage:a.errorMessage,customSelector:!0,children:n.data?.payment_types.sort((e,t)=>e.name.localeCompare(t.name)).map((e,t)=>r.jsx("option",{value:e.id,children:e.name},t))})}export{u as P};

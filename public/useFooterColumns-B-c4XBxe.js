@@ -1,0 +1,1 @@
+import{u as r}from"./useSumTableColumn-C4D5B3Po.js";import{u as m,W as a,dD as c}from"./bundle.bpdBBdtF.js";function C(){const[t]=m(),u=a(),s=r();c();const n=[{column:"amount",id:"amount",label:t("amount"),format:(o,l)=>s(o,l)}],e=u?.table_footer_columns?.recurringInvoice||[];return{footerColumns:n.filter(({id:o})=>e.includes(o)),allFooterColumns:n}}export{C as u};

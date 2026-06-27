@@ -1,0 +1,1 @@
+import{aK as o,T as n,r as a,e as u}from"./bundle.bpdBBdtF.js";function r({entity:e}){const t=o();return s=>{s.length&&(n.processing(),t.fetchQuery([`/api/v1/${e}s/bulk`],()=>a("POST",u(`/api/v1/${e}s/bulk`),{action:"bulk_download",ids:s}).then(()=>n.success("downloaded_entities"))))}}export{r as u};

@@ -1,0 +1,1 @@
+import{j as a,bs as n}from"./bundle.bpdBBdtF.js";function o({variant:e,children:s,className:t,id:r,style:x}){return a.jsx("div",{id:r,className:n("flex justify-center items-center px-3 py-2 text-xs md:px-6 md:text-sm leading-6 text-gray-900",{"bg-orange-300":e==="orange","bg-red-300":e==="red"},t),style:x,children:s})}export{o as B};
