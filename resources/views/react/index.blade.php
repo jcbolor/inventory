@@ -31,7 +31,7 @@
           .catch(function(e) { console.warn('SW registration failed', e); });
       }
     </script>
-    <script type="module" crossorigin src="/bundle.bizlab4.js"></script>
+    <script type="module" crossorigin src="/bundle.bpdBBdtF.js"></script>
     <link rel="stylesheet" crossorigin href="/index-BM7ASK0Q.css">
   </head>
 
