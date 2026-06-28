@@ -14,6 +14,8 @@ namespace App\Utils\Traits;
 
 use App\Jobs\Util\UnlinkFile;
 use App\Jobs\Util\UploadAvatar;
+use App\Models\Company;
+use App\Services\Logo\LoginLogoSync;
 
 /**
  * Class Uploadable.
@@ -34,6 +36,11 @@ trait Uploadable
                 $settings->company_logo = $path;
                 $entity->settings = $settings;
                 $entity->save();
+
+                // Mirror the company-level logo onto the login screen assets.
+                if ($entity instanceof Company) {
+                    LoginLogoSync::fromBinary(file_get_contents($file));
+                }
             }
         }
     }
