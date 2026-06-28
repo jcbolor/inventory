@@ -33,6 +33,17 @@
     </script>
     <script type="module" crossorigin src="/bundle.bpdBBdtF.js"></script>
     <link rel="stylesheet" crossorigin href="/index-BM7ASK0Q.css">
+    <style>
+      /* Mobile responsiveness fixes (scoped to exact dashboard grids so the
+         rest of the app is unaffected). Lives here in the no-cache HTML, so it
+         can't break the React bundle and needs no cache-busting. */
+      @media (max-width: 768px) {
+        .grid.grid-cols-4.gap-4.w-full { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+      }
+      @media (max-width: 480px) {
+        .grid.grid-cols-4.gap-4.w-full { grid-template-columns: repeat(1, minmax(0, 1fr)) !important; }
+      }
+    </style>
   </head>
 
   <body class="h-full">
